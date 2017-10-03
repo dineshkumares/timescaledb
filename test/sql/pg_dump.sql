@@ -29,7 +29,7 @@ SELECT * FROM "two_Partitions" ORDER BY "timeCustom", device_id;
 SELECT * FROM _timescaledb_internal._hyper_1_1_chunk ORDER BY "timeCustom", device_id;
 SELECT * FROM _timescaledb_internal._hyper_1_2_chunk ORDER BY "timeCustom", device_id;
 
-\c postgres
+\c postgres postgres
 
 \! pg_dump -h localhost -U postgres -Fc single > dump/single.sql
 \! dropdb -h localhost -U postgres single
